@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>starbucks website design page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+       <section>
+       	     <div class="circle"></div>
+       	       <header>
+       	       	   <a href="#"><img src="logo.png" class="logo"></a>
+       	       	   <ul>
+       	       	   	  <li><a href="#">Home</a></li>
+       	       	   	  <li><a href="#">Menu</a></li>
+       	       	   	  <li><a href="#">What's New</a></li>
+       	       	   	  <li><a href="#">Contacts</a></li>
+       	       	   </ul>
+       	       </header>
+       	       <div class="content">
+       	       	     <div class="textBox"> 
+       	       	     	<h2>It's not just CoFFee<br>It's <span>StarBucks</span></h2>
+       	       	     	<p> Starbucks was named after a nautical character, the original Starbucks logo was designed to reflect the seductive imagery of the sea. An early creative partner dug through old marine archives until he found an image of a siren from a 16th century Nordic woodcut.</p>
+       	       	     	<a href="#">Learn More</a>
+       	       	     </div>
+       	       	     	 <div class="imgBox">
+       	       	     	     <img src="img1.png" class="starbucks">
+       	       	     	
+       	       	            </div>
+
+
+       	       	            
+       	       	     </div>
+
+       	       	<ul class="thumb">
+       	       		<li><img src="thumb1.png" onclick="imgSlider('img1.png');changeCircleColor('#017143')"></li>
+       	       		<li><img src="thumb2.png" onclick="imgSlider('img2.png');changeCircleColor('#eb7495')"></li>
+       	       		<li><img src="thumb3.png" onclick="imgSlider('img3.png');changeCircleColor('#d752b1')"></li>
+
+       	       	</ul>
+       	     <ul class="sci">
+       	     	   <li><a href="#"><img src="facebook.png"></a></li>
+       	     	   <li><a href="#"><img src="twitter.png"></a></li>
+       	     	   <li><a href="https://www.instagram.com/mr_rambhkt_rahul"><img src="instagram.png"></a></li>
+
+       	     </ul>
+       </section>
+
+
+
+       <script>
+       	    function imgSlider(anything) {
+       	    	// body... 
+       	    	document.querySelector('.starbucks').src = anything;
+       	    }
+
+       	    function changeCircleColor(color) {
+       	    	const circle = document.querySelector('.circle');
+       	    	circle.style.background = color;
+       	    }
+
+
+       </script>
+</body>
+</html>
